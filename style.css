@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    background: url("http://wallpapercave.com/wp/AF1Urex.jpg");
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    padding: 50px;
+    background-size: cover;
+    
+}
+.card{
+    width:50%;
+    max-width: 80vw;
+    padding: 40px 20px 20px 20px; 
+    background-color: rgba(0,0,0,0.2);
+    color:white;
+    
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card  .title img {
+  width:50px;
+  height: 50px;
+}
+.searchitem{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+    padding: 20px 0px 20px 0px;
+}
+.searchitem input{
+    width:90%;
+    border-radius: 25px;
+   font-size: 16px;
+    padding:10px;
+    background: transparent;
+    border:2px solid violet;
+    color:white;
+
+   
+}
+.searchitem button{
+    border-radius: 50%;
+    align-items: center;
+    padding:10px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.searchitem button:hover{
+    box-shadow:2px 4px 4px violet;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding:20px 45px;
+    position: relative;
+    color:white;
+    text-shadow:2px 4px 4px violet;
+   
+}
+ul li::before{
+    content:"";
+    position: absolute;
+    background: url("unchecked.png");
+    background-size: cover;
+    top:18px;
+    left:12px;
+    width:28px;
+    height:28px;
+}
+ul li.checked{
+    text-decoration:line-through;
+   
+ }
+ ul li.checked::before{
+   
+    background: url("checked.png");
+    background-size: cover;
+    position: absolute;
+    width:28px;
+    height:28px;
+   
+ }
+ span{
+    position: absolute;
+    right:0;
+    top:5px;
+    align-items: center;
+    padding:10px
+
+ }
+ span:hover{
+    border:2px solid white ;
+    border-radius: 50%;
+    box-shadow:2px 4px 4px violet;
+ }
+@media (max-width:1100px){
+.card{
+   width:100%
+}
+}
